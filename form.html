@@ -1,48 +1,47 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html>
 
 <head>
-    <meta charset="utf8">
-    <link rel="stylesheet" href="form.css">
+    <meta charset="utf8" />
+    <link rel="stylesheet" href="form.css" />
     <title>test</title>
 </head>
 
 <body>
-    <p>Prénom</p>
-    <input name="Nom" type="text" required>
-    <p>Nom</p>
-    <input name="Prénom" type="text" required>
-    <p>Date de naissance</p>
-    <input name="departure" type="date">
-    <p>sexe</p>
-    <label>
-            <input name="preflang" type="radio" value="html" checked>
-            Femme
-    </label>
-    <input name="preflang" type="radio" value="html"> Homme
-    </label>
-    <p>Pays</p>
-    <label for="pet-select"></label>
-
-    <select name="pays" id="pays-select">
-    <option value="">Choisissez...</option>
-    <option value="France">France</option>
-    <option value="Belgique">Belgique</option>
-    <option value="Luxembourg">Luxembourg</option>
-    <option value="Allemagne">Allemagne</option>
-    <option value="Espagne">Espagne</option>
-    </select>
-    <p>Courriel</p>
-    <input name="email" type="email" required>
-    <p>Mot de passe</p>
-    <input name="password" type="password" required>
-    <p>Photo</p>
     <form method="POST" enctype="multipart/form-data">
-        <input name="image" type="file" accept="image/png,image/jpeg">
+        <p>Prénom</p>
+        <input name="Nom" type="text" required />
+        <p>Nom</p>
+        <input name="Prénom" type="text" required />
+        <p>Date de naissance</p>
+        <input name="departure" type="date" />
+        <p>sexe</p>
+        <label>
+                <input name="preflang" type="radio" value="html" checked />
+                Femme
+            </label>
+        <input name="preflang" type="radio" value="html" /> Homme
+        <p>Pays</p>
+        <label for="pays-select"></label>
+
+        <select name="pays" id="pays-select">
+                <option value="">Choisissez...</option>
+                <option value="France">France</option>
+                <option value="Belgique">Belgique</option>
+                <option value="Luxembourg">Luxembourg</option>
+                <option value="Allemagne">Allemagne</option>
+                <option value="Espagne">Espagne</option>
+            </select>
+        <p>Courriel</p>
+        <input name="email" type="email" required />
+        <p>Mot de passe</p>
+        <input name="password" type="password" required />
+        <p>Photo</p>
+        <input name="image" type="file" accept="image/png,image/jpeg" />
+        <p></p>
+        <button type="submit" class="bouton">Envoyer</button>
+        <button type="reset" class="bouton2">Effacer</button>
     </form>
-    <p></p>
-    <button type="submit" class="bouton">Envoyer</button>
-    <button type="reset" class="bouton2">Effacer</button>
 </body>
 
 </html>
